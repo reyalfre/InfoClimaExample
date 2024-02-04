@@ -20,7 +20,7 @@ public class ApiEjemploClima {
         climaService.generarCiudadFake();
         return "Hola " + nombreUsuario + " " + apellido + ", pero qué guapo/a eres";
     }
-
+    //http://localhost:8080/api/ejemplo-clima/nueva-ciudad
     @PostMapping("/nueva-ciudad")
     public ResponseEntity<Boolean> nuevaInformacionClima(@RequestBody InfoClima info) {
         climaService.nueva(info);
